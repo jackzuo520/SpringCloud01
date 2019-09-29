@@ -13,6 +13,8 @@ eureka:
   client:
    service-url:
        defaultZone: http://localhost:8888/eureka/
+   register-with-eureka:false
+   fetch-registry:false
    instance:
        hostname: dept-8001.com
        prefer-ip-address: true
@@ -26,7 +28,9 @@ server:
 eureka:
   client:
     service-url:
-      defualtZone: http://localhost.com:7001/eureka/
+      defualtZone: http://localhost:8888/eureka/
+    register-with-eureka:false
+    fetch-registry:false
   instance:
     hostname: dept-8001.com
     prefer-ip-address: true
