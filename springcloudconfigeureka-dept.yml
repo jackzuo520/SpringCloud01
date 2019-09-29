@@ -1,26 +1,23 @@
 spring:
- profiles:
-   active:
-     -dev
----
-spring:
-  profiles: dev
   application:
-     name: springcloud-config-eureka-dept
+    name: springcloud-config-eureka-dept
+  profiles:
+    active: dev
 server:
   port: 8001
 eureka:
   client:
-    service-url: 
+    service-url:
       defuatlZone: http://localhost:8888/eureka/
 ---
 spring:
-  profiles: test
   application:
-     name: springcloud-config-eureka-dept
+    name: springcloud-config-eureka-dept
+  profiles:
+    active: text
 server:
   port: 8001
 eureka:
   client:
-    service-url: 
+    service-url:
       defuatlZone: http://localhost:8888/eureka/
