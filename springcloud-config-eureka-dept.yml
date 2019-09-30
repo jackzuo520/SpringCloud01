@@ -21,9 +21,9 @@ eureka:
    instance:
        hostname: dept-8001.com
        prefer-ip-address: true
-mybatis-puls:
-   mapper-locations: classpath:Mapper/*.xml
-   type-aliases-package: com.example.Pojo
+mybatis-plus:
+  type-aliases-package: com.example.Pojo
+  mapper-locations: classpath:Mapper/*.xml
 ---
 spring:
   profiles: test
@@ -44,6 +44,6 @@ eureka:
   instance:
     hostname: dept-8001.com
     prefer-ip-address: true
-mybatis-puls:
-   mapper-locations: classpath:Mapper/*.xml
-   type-aliases-package: com.example.Pojo
+mybatis-plus:
+  type-aliases-package: com.example.Pojo
+  mapper-locations: classpath:Mapper/*.xml
